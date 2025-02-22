@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة الديار العالمية</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- الهيدر -->
+<header>
+    <div class="header-container">
+        <!-- الشعار -->
+        <div class="logo">
+            <img src="nn.png" alt="شعار مؤسسة خيام ومظلات" class="logo-img">
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com/YourPage" target="_blank" title="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/aldiyarglobal/" target="_blank" title="تابعنا على إنستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+9660553719009" target="_blank" title="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+9660553719009" class="phone-icon" title="اتصل بنا"><i class="fas fa-phone-alt"></i></a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="tents.html">المظلات</a></li>
+                <li><a href="royal-tents.html">الخيم الملكية</a></li>
+                <li><a href="shields.html">سواتر</a></li>
+                <li><a href="tent-homes.html">بيت شعر </a></li>
+                <li><a href="pergolas.html">برجولات</a></li>
+                <li><a href="garden-design.html">تنسيق حدائق</a></li>
+                <li><a href="other-services.html">خدمات أخرى</a></li>
+            </ul>
+        </nav>
+        <!-- أيقونة الهامبرغر -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+<main>
+    <h2 class="section-title">بعض الصور من أعمالنا</h2>
+
+    <div class="gallery">
+        <div class="photo">
+            <img src="10 (1).jpg" alt="صورة 1">
+            <div class="caption">عنوان الصورة 1</div>
+        </div>
+        <div class="photo">
+            <img src="10 (2).jpg" alt="صورة 2">
+            <div class="caption">عنوان الصورة 2</div>
+        </div>
+        <div class="photo">
+            <img src="10 (3).jpg" alt="صورة 3">
+            <div class="caption">عنوان الصورة 3</div>
+        </div>
+        <div class="photo">
+            <img src="nn.png" alt="صورة 4">
+            <div class="caption">عنوان الصورة 4</div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://facebook.com/YourPage" target="_blank" title="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/YourProfile" target="_blank" title="تابعنا على تويتر"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/aldiyarglobal/" target="_blank" title="تابعنا على إنستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/YourProfile" target="_blank" title="تابعنا على لينكد إن"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/+9660553719009" target="_blank" title="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+9660553719009" class="phone-icon" title="اتصل بنا"><i class="fas fa-phone-alt"></i></a>
+            <a href="mailto:yourname@example.com" class="email-icon" title="راسلنا عبر البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+        </div>
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector(".nav-links");
+                menu.classList.toggle("active");
+            }
+        </script>
+      
+</footer>
+</body>
