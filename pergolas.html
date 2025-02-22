@@ -126,7 +126,31 @@
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
-    
+    function loadImagesFromFolder(folderName) {
+    const gallery = document.getElementById("gallery");
+    gallery.innerHTML = ""; // مسح المعرض الحالي
+
+    let i = 1;
+    function loadImage() {
+        const img = document.createElement("img");
+        img.src = `${folderName}/${i}.jpg`; // تأكد من أن المسار صحيح
+        img.alt = `صورة ${i}`;
+        img.onload = () => {
+            img.onclick = () => openModal(img.src);
+            gallery.appendChild(img);
+            i++;
+            loadImage();
+        };
+        img.onerror = () => {
+            console.log(`No more images found in ${folderName} after ${i - 1}.`);
+        };
+    }
+
+    loadImage();
+}
+
+// تحميل الصور من مجلد "tents" عند تحميل الصفحة
+window.onload = () => loadImagesFromFolder("prolog");
         </script>
 </body>
 </html>
