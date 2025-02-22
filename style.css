@@ -1,13 +1,5 @@
 /* إعدادات عامة */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-element {
-    border: none;
-    outline: none;
-}
-    
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -184,64 +176,84 @@ main {
 
 /* قسم الخدمات */
 .services {
-    padding: 50px 20px;
-    background-color: #f1dc98ad;
+    padding: 80px 20px;
+    background-color: #f8f8f8; /* لون خلفية ناعم */
     text-align: center;
-    text-decoration: none;
 }
 
 .services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #2c3e50; /* لون نص داكن */
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+    letter-spacing: 2px; /* زيادة المسافة بين الحروف */
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* زيادة عرض العناصر */
+    gap: 30px; /* زيادة المسافة بين العناصر */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(45, 44, 44, 0.1);
+    border-radius: 15px; /* زيادة نصف القطر للزوايا */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* ظل أكثر نعومة */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* لون خلفية العنصر */
 }
 
 .service:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(36, 35, 35, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* ظل أكبر عند التمرير */
 }
 
 .service img {
     width: 100%;
-    height: 200px;
+    height: 220px; /* زيادة ارتفاع الصورة */
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0; /* تطابق زوايا الصورة مع العنصر */
+    transition: transform 0.3s ease;
+}
+
+.service:hover img {
+    transform: scale(1.1); /* تكبير الصورة عند التمرير */
 }
 
 .service-info {
     background-color: #fff;
-    padding: 15px;
-    text-align: left;
-    
+    padding: 20px;
+    text-align: center;
 }
 
 .service-info h3 {
-    font-size: 1.5rem;
-    color: #d4af37;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #d4af37; /* لون ذهبي للعناوين */
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
 }
 
 .service-info p {
-    font-size: 1.5rem;
-    color: #000000;
-    font-family: 'Arial', sans-serif; 
-    
+    font-size: 1.1rem;
+    color: #555; /* لون نص أفتح */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* زيادة تباعد الأسطر */
 }
 
+/* إضافة تأثير على الروابط */
+.service a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.service a:hover {
+    text-decoration: none;
+}
 /* الفوتر */
 footer {
     background-color: #333;
