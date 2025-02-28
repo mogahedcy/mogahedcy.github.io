@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مؤسسة الديار العالمية - تخصصنا في توفير الخيام والمظلات والسواتر والبرجولات وتنسيق الحدائق.">
+    <meta name="keywords" content="خيام, مظلات, سواتر, برجولات, تنسيق حدائق, مؤسسة الديار العالمية">
     <title>مؤسسة الديار العالمية</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- علامات Schema لتحسين SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "مؤسسة الديار العالمية",
+        "url": "https://www.example.com",
+        "logo": "https://www.example.com/nn.png",
+        "description": "مؤسسة الديار العالمية - تخصصنا في توفير الخيام والمظلات والسواتر والبرجولات وتنسيق الحدائق.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+9660553719009",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://facebook.com/YourPage",
+            "https://www.instagram.com/aldiyarglobal/",
+            "https://twitter.com/YourProfile",
+            "https://linkedin.com/in/YourProfile"
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- الهيدر -->
@@ -13,13 +37,13 @@
         <div class="header-container">
             <!-- الشعار -->
             <div class="logo">
-                <img src="nn.png" alt="شعار مؤسسة خيام ومظلات" class="logo-img">
+                <img src="nn.png" alt="شعار مؤسسة الديار العالمية - خيام ومظلات" class="logo-img">
             </div>
             <div class="social-icons">
-                <a href="https://facebook.com/YourPage" target="_blank" title="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/aldiyarglobal/" target="_blank" title="تابعنا على إنستغرام"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/+9660553719009" target="_blank" title="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
-                <a href="tel:+9660553719009" class="phone-icon" title="اتصل بنا"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://facebook.com/YourPage" target="_blank" aria-label="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/aldiyarglobal/" target="_blank" aria-label="تابعنا على إنستغرام"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/+9660553719009" target="_blank" aria-label="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+9660553719009" class="phone-icon" aria-label="اتصل بنا"><i class="fas fa-phone-alt"></i></a>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -31,29 +55,31 @@
                     <li><a href="pergolas.html">برجولات وتنسيق حدائق</a></li>
                 </ul>
             </nav>
-            <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamburger" onclick="toggleMenu()" aria-label="فتح القائمة">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
+
     <!-- معرض الصور -->
     <main>
         <div class="gallery" id="gallery"></div>
-        <div id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()">
+        <div id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="الصعود إلى الأعلى">
             <i class="fas fa-chevron-up"></i>
         </div>
     </main>
+
     <!-- الفوتر -->
     <footer>
         <div class="footer-container">
             <div class="social-icons">
-                <a href="https://facebook.com/YourPage" target="_blank" title="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/YourProfile" target="_blank" title="تابعنا على تويتر"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/aldiyarglobal/" target="_blank" title="تابعنا على إنستغرام"><i class="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com/in/YourProfile" target="_blank" title="تابعنا على لينكد إن"><i class="fab fa-linkedin"></i></a>
-                <a href="https://wa.me/+9660553719009" target="_blank" title="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
-                <a href="tel:+9660553719009" class="phone-icon" title="اتصل بنا"><i class="fas fa-phone-alt"></i></a>
-                <a href="mailto:yourname@example.com" class="email-icon" title="راسلنا عبر البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+                <a href="https://facebook.com/YourPage" target="_blank" aria-label="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/YourProfile" target="_blank" aria-label="تابعنا على تويتر"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/aldiyarglobal/" target="_blank" aria-label="تابعنا على إنستغرام"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/YourProfile" target="_blank" aria-label="تابعنا على لينكد إن"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/+9660553719009" target="_blank" aria-label="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+9660553719009" class="phone-icon" aria-label="اتصل بنا"><i class="fas fa-phone-alt"></i></a>
+                <a href="mailto:yourname@example.com" class="email-icon" aria-label="راسلنا عبر البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
@@ -61,72 +87,57 @@
     <!-- المودال -->
     <div id="modal" class="modal" onclick="closeModal()">
         <span class="close">&times;</span>
-        <img class="modal-content" id="modal-img">
+        <img class="modal-content" id="modal-img" alt="صورة معرض مؤسسة الديار العالمية">
     </div>
 
+    <script>
+        window.onload = async function () {
+            const gallery = document.getElementById("gallery");
+            let i = 1;
 
+            async function loadImage() {
+                const img = document.createElement("img");
+                img.src = `royal2/ (${i}).jpg`;
+                img.alt = `صورة ${i} - خيام ومظلات مؤسسة الديار العالمية`;
+                img.loading = "lazy";
+                img.onclick = () => openModal(img.src);
+                gallery.appendChild(img);
+                i++;
+                await new Promise(resolve => img.onload = resolve);
+                loadImage();
+            }
 
+            loadImage();
+        };
 
- 
-    </div>
-    <script >
-        window.onload = function () {
-        const gallery = document.getElementById("gallery");
-    
-        let i = 1; // بدء الترقيم من 1
-        function loadImage() {
-            const img = document.createElement("img");
-            img.src = `royal2/ (${i}).jpg`; // تحديد مسار الصورة
-            img.alt = `صورة ${i}`;
-            img.onload = () => { // إذا تم تحميل الصورة بنجاح
-                img.onclick = () => openModal(img.src); // تعيين وظيفة النقر
-                gallery.appendChild(img); // إضافة الصورة إلى المعرض
-                i++; // الانتقال إلى الصورة التالية
-                loadImage(); // استدعاء الدالة لتحميل الصورة التالية
-            };
-            img.onerror = () => { // عند فشل تحميل الصورة
-                console.log(`No more images found after (${i - 1}).`);
-            };
+        function toggleMenu() {
+            const menu = document.querySelector(".nav-links");
+            menu.classList.toggle("active");
         }
-    
-        loadImage(); // بدء تحميل الصور
-    };
-    // تبديل قائمة التنقل
-    function toggleMenu() {
-        const menu = document.querySelector(".nav-links");
-        menu.classList.toggle("active");
-    }
-    
-    // فتح المودال لعرض الصور
-    function openModal(src) {
-        const modal = document.getElementById("modal");
-        const modalImg = document.getElementById("modal-img");
-        modal.style.display = "flex";
-        modalImg.src = src;
-    }
-    
-    // إغلاق المودال
-    function closeModal() {
-        document.getElementById("modal").style.display = "none";
-    }
-    
-    
-    
-    // إظهار أو إخفاء زر الصعود بناءً على موضع التمرير
-    window.onscroll = function () {
-        const scrollTopBtn = document.getElementById("scrollTopBtn");
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            scrollTopBtn.style.display = "block";
-        } else {
-            scrollTopBtn.style.display = "none";
+
+        function openModal(src) {
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-img");
+            modal.style.display = "flex";
+            modalImg.src = src;
         }
-    };
-    
-    // دالة الصعود إلى أعلى الصفحة
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-    
-        </script>
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        window.onscroll = function () {
+            const scrollTopBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
 </body>
 </html>
