@@ -1,188 +1,147 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="مؤسسة الديار العالمية - متخصصون في تصميم وتنفيذ الخيام، المظلات، البرجولات، والسواتر في المملكة العربية السعودية.">
-  <meta name="keywords" content="تركيب مظلات في جدة, أفضل شركة مظلات في جدة, تصميم خيام في جدة, تركيب سواتر في جدة">
-  <meta name="author" content="مؤسسة الديار العالمية">
-  <title>مؤسسة الديار العالمية - الخيام والمظلات والبرجولات</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مؤسسة الديار العالمية - متخصصون في تصميم وتنفيذ الخيام، المظلات، البرجولات، والسواتر في المملكة العربية السعودية.">
+    <meta name="keywords" content="تركيب مظلات في جدة, أفضل شركة مظلات في جدة, تصميم خيام في جدة, تركيب سواتر في جدة">
+    <meta name="author" content="مؤسسة الديار العالمية">
+    <title>مؤسسة الديار العالمية - الخيام والمظلات والبرجولات</title>
+    
+    <!-- تحسين تحميل الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- تحسين تحميل CSS -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.onload=null;this.media='all';">
 
-  <!-- تحميل الخطوط -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- تحسين التوافق مع محركات البحث -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "مؤسسة الديار العالمية",
+      "image": "https://www.aldeyar.me/logo.webp",
+      "description": "متخصصون في تصميم وتنفيذ الخيام، المظلات، البرجولات، والسواتر.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع الملك عبدالعزيز",
+        "addressLocality": "جدة",
+        "addressRegion": "جدة",
+        "postalCode": "12345",
+        "addressCountry": "SA"
+      },
+      "telephone": "+9660553719009",
+      "url": "https://www.aldeyar.me"
+    }
+    </script>
 
-  <!-- ربط ملف CSS الخارجي -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Schema.org Markup لتحسين SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "مؤسسة الديار العالمية",
-    "image": "https://www.aldeyar.me/logo.webp",
-    "description": "متخصصون في تصميم وتنفيذ الخيام، المظلات، البرجولات، والسواتر.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "شارع الملك عبدالعزيز",
-      "addressLocality": "جدة",
-      "addressRegion": "جدة",
-      "postalCode": "12345",
-      "addressCountry": "SA"
-    },
-    "telephone": "+9660553719009",
-    "url": "https://www.aldeyar.me"
-  }
-  </script>
+    <style>
+        /* تحسين التحميل الأولي */
+        body { font-family: 'Cairo', sans-serif; margin: 0; padding: 0; }
+        header { background: #f8f9fa; padding: 10px; text-align: center; }
+        .logo img { max-width: 200px; height: auto; }
+        .nav-links { list-style: none; padding: 0; display: flex; justify-content: center; }
+        .nav-links li { margin: 0 10px; }
+        .nav-links a { text-decoration: none; color: #333; font-weight: bold; }
+        .slideshow-container { position: relative; max-width: 100%; overflow: hidden; }
+        .slides img { width: 100%; height: auto; }
+    </style>
 </head>
 <body>
-  <!-- الهيدر -->
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <img src="logo.webp" alt="شعار مؤسسة الديار العالمية" class="logo-img" width="200" height="80">
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="tents.html">المظلات</a></li>
-          <li><a href="royal-tents.html">الخيم الملكية</a></li>
-          <li><a href="shields.html">سواتر</a></li>
-          <li><a href="tent-homes.html">بيت شعر</a></li>
-          <li><a href="pergolas.html">برجولات وتنسيق حدائق</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-    </div>
-  </header>
 
-  <!-- المحتوى الرئيسي -->
-  <main>
-    <!-- عرض الشرائح -->
+    <!-- الهيدر -->
+    <header>
+        <div class="logo">
+            <img src="logo.webp" alt="شعار مؤسسة الديار العالمية">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="tents.html">المظلات</a></li>
+                <li><a href="royal-tents.html">الخيم الملكية</a></li>
+                <li><a href="shields.html">سواتر</a></li>
+                <li><a href="tent-homes.html">بيت شعر</a></li>
+                <li><a href="pergolas.html">برجولات وتنسيق حدائق</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- عرض الشرائح المحسن -->
     <div class="slideshow-container">
-      <div class="slides">
-        <picture>
-          <source srcset="slide1.webp" type="image/webp">
-          <img src="slide1.jpg" alt="صورة 1" width="1200" height="400" loading="lazy">
-        </picture>
-      </div>
-      <div class="slides">
-        <picture>
-          <source srcset="slide2.webp" type="image/webp">
-          <img src="slide2.jpg" alt="صورة 2" width="1200" height="400" loading="lazy">
-        </picture>
-      </div>
-      <div class="slides">
-        <picture>
-          <source srcset="slide3.webp" type="image/webp">
-          <img src="slide3.jpg" alt="صورة 3" width="1200" height="400" loading="lazy">
-        </picture>
-      </div>
-    </div>
-    <div class="dots">
-      <span onclick="currentSlide(1)"></span>
-      <span onclick="currentSlide(2)"></span>
-      <span onclick="currentSlide(3)"></span>
+        <div class="slides">
+            <picture>
+                <source srcset="slide1.webp" type="image/webp">
+                <img src="slide1.jpg" alt="صورة 1" loading="lazy">
+            </picture>
+        </div>
+        <div class="slides">
+            <picture>
+                <source srcset="slide2.webp" type="image/webp">
+                <img src="slide2.jpg" alt="صورة 2" loading="lazy">
+            </picture>
+        </div>
+        <div class="slides">
+            <picture>
+                <source srcset="slide3.webp" type="image/webp">
+                <img src="slide3.jpg" alt="صورة 3" loading="lazy">
+            </picture>
+        </div>
     </div>
 
-    <!-- نص تعريفي -->
-    <section class="intro">
-      <p class="intro-paragraph">
-        <strong>مرحباً بكم في مؤسسة الديار العالمية</strong><br>
-        نحن متخصصون في تصميم وتنفيذ الخيام، المظلات، البرجولات، والسواتر في المملكة العربية السعودية، ملتزمون بتقديم أعلى معايير الجودة والابتكار.
-      </p>
+    <!-- تحسين تحميل الخدمات -->
+    <section id="services">
+        <h2>خدماتنا</h2>
+        <div class="services-grid">
+            <div class="service">
+                <a href="tents.html">
+                    <picture>
+                        <source srcset="tent.webp" type="image/webp">
+                        <img src="tent.jpg" alt="مظلات" loading="lazy">
+                    </picture>
+                    <h3>المظلات</h3>
+                </a>
+            </div>
+            <div class="service">
+                <a href="royal-tents.html">
+                    <picture>
+                        <source srcset="royal-tent.webp" type="image/webp">
+                        <img src="royal-tent.jpg" alt="الخيام الملكية" loading="lazy">
+                    </picture>
+                    <h3>الخيام الملكية</h3>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <!-- قسم الخدمات -->
-    <section id="services" class="services">
-      <h2>خدماتنا</h2>
-      <div class="services-grid">
-        <div class="service">
-          <a href="tents.html">
-            <picture>
-              <source srcset="tent.webp" type="image/webp">
-              <img src="tent.jpg" alt="مظلات" width="400" height="220" loading="lazy">
-            </picture>
-            <div class="service-info">
-              <h3>المظلات</h3>
-            </div>
-          </a>
-        </div>
-        <div class="service">
-          <a href="royal-tents.html">
-            <picture>
-              <source srcset="royal-tent.webp" type="image/webp">
-              <img src="royal-tent.jpg" alt="الخيام الملكية" width="400" height="220" loading="lazy">
-            </picture>
-            <div class="service-info">
-              <h3>الخيام الملكية</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- قسم المقالات -->
+    <!-- تحسين تحميل المقالات -->
     <section id="blog">
-      <h2>آخر المقالات</h2>
-      <iframe src="https://aldeyar.blogspot.com/?m=1" width="100%" height="500" loading="lazy"></iframe>
+        <h2>آخر المقالات</h2>
+        <iframe src="https://aldeyar.blogspot.com/?m=1" width="100%" height="500px" loading="lazy"></iframe>
     </section>
-  </main>
 
-  <!-- الفوتر -->
-  <footer>
-    <div class="social-icons">
-      <a href="https://facebook.com/YourPage" target="_blank" title="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/aldiyarglobal/" target="_blank" title="تابعنا على إنستغرام"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/+9660553719009" target="_blank" title="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
-      <a href="tel:+9660553719009" title="اتصل بنا"><i class="fas fa-phone-alt"></i></a>
-    </div>
-    <p>&copy; 2024 مؤسسة الديار العالمية - جميع الحقوق محفوظة.</p>
-  </footer>
+    <!-- الفوتر -->
+    <footer>
+        <p>&copy; 2024 مؤسسة الديار العالمية - جميع الحقوق محفوظة.</p>
+    </footer>
 
-  <!-- زر الصعود إلى أعلى -->
-  <div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
-    <i class="fas fa-chevron-up"></i>
-  </div>
+    <!-- تحسين تحميل JavaScript -->
+    <script defer>
+        // تفعيل عرض الشرائح
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000);
+        }
+        document.addEventListener("DOMContentLoaded", showSlides);
+    </script>
 
-  <!-- JavaScript مع defer لتحسين الأداء -->
-  <script defer>
-    // عرض الشرائح
-    let slideIndex = 0;
-    function showSlides() {
-      const slides = document.getElementsByClassName("slides");
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1; }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 5000);
-    }
-    document.addEventListener("DOMContentLoaded", showSlides);
-
-    // القائمة المتجاوبة
-    function toggleMenu() {
-      document.querySelector(".nav-links").classList.toggle("active");
-    }
-
-    // زر الصعود إلى أعلى
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    window.addEventListener("scroll", function() {
-      const scrollTopButton = document.getElementById("scrollTop");
-      if (window.pageYOffset > 300) {
-        scrollTopButton.style.display = "flex";
-      } else {
-        scrollTopButton.style.display = "none";
-      }
-    });
-  </script>
-
-  <!-- تحميل Font Awesome -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 </html>
