@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="مؤسسة الديار العالمية - تخصصنا في توفير الخيام والمظلات والسواتر والبرجولات وتنسيق الحدائق.">
     <meta name="keywords" content="خيام, مظلات, سواتر, برجولات, تنسيق حدائق, مؤسسة الديار العالمية">
-    <title>مؤسسة الديار العالمية</title>
+    <title>خيام ملكية الديار العالمية جدة</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- علامات Schema لتحسين SEO -->
@@ -30,6 +30,34 @@
         ]
     }
     </script>
+    <script>
+fetch('keywords.txt')
+    .then(response => response.text())
+    .then(data => {
+        // تحديث Meta Keywords
+        let metaTag = document.querySelector('meta[name="keywords"]');
+        if (metaTag) {
+            metaTag.content = data;
+        } else {
+            let newMetaTag = document.createElement('meta');
+            newMetaTag.name = "keywords";
+            newMetaTag.content = data;
+            document.head.appendChild(newMetaTag);
+        }
+
+        // إضافة JSON-LD للبيانات المنظمة
+        let jsonLdScript = document.createElement('script');
+        jsonLdScript.type = 'application/ld+json';
+        jsonLdScript.innerHTML = JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": document.title || "موقعي",
+            "keywords": data
+        });
+        document.head.appendChild(jsonLdScript);
+    })
+    .catch(error => console.error('خطأ في تحميل الكلمات المفتاحية:', error));
+</script>
 </head>
 <body>
     <!-- الهيدر -->
