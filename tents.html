@@ -30,12 +30,38 @@
       "url": "https://www.aldeyar.me"
     }
     </script>
+    <style>
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+        }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="nn.png" alt="شعار مؤسسة خيام ومظلات" class="logo-img">
+                <img src="nn.png" alt="شعار مؤسسة خيام ومظلات" class="logo-img" width="150" height="150">
             </div>
             <div class="social-icons">
                 <a href="https://facebook.com/YourPage" target="_blank" title="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
@@ -79,20 +105,34 @@
         window.onload = function () {
             const gallery = document.getElementById("gallery");
             let i = 1;
+            
             function loadImage() {
                 const img = document.createElement("img");
+                const loadingOverlay = document.createElement("div");
+                loadingOverlay.classList.add("loading-overlay");
+                const spinner = document.createElement("div");
+                spinner.classList.add("spinner");
+                loadingOverlay.appendChild(spinner);
+                gallery.appendChild(loadingOverlay);
+                
                 img.src = `tents2/ (${i}).jpg`;
                 img.alt = `صورة ${i}`;
                 img.loading = "lazy";
+
                 img.onload = () => {
+                    loadingOverlay.style.visibility = "hidden"; // إخفاء مؤشر التحميل عند اكتمال تحميل الصورة
                     img.onclick = () => openModal(img.src);
                     gallery.appendChild(img);
                     i++;
                     loadImage();
                 };
+
                 img.onerror = () => {
                     console.log(`No more images found after (${i - 1}).`);
+                    loadingOverlay.style.visibility = "hidden"; // إخفاء مؤشر التحميل إذا كانت الصورة غير موجودة
                 };
+                
+                gallery.appendChild(loadingOverlay);
             }
             loadImage();
         };
