@@ -6,7 +6,7 @@
     <meta name="description" content="مؤسسة الديار العالمية - متخصصون في تصميم وتنفيذ الخيام، المظلات، البرجولات، والسواتر في المملكة العربية السعودية.">
     <meta name="keywords" content ="خيام, مظلات, برجولات, سواتر, بيت شعر, تنسيق حدائق, مظلات جدة, تركيب مظلات, أفضل مظلات, سواتر بجدة, مظلات ">
     <meta name="author" content="مؤسسة الديار العالمية">
-    <title>مؤسسة الديار العالمية - الخيام والمظلات والبرجولات</title>
+    <title>مؤسسة الديار العالمية - مظلات منازل وسيارات</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="awgt7MHqUQStfNRpcpyi7QItYmuFIN6y4cnduOqU_Hc" />
@@ -30,6 +30,34 @@
       "url": "https://www.aldeyar.me"
     }
     </script>
+    <script>
+fetch('keywords.txt')
+    .then(response => response.text())
+    .then(data => {
+        // تحديث Meta Keywords
+        let metaTag = document.querySelector('meta[name="keywords"]');
+        if (metaTag) {
+            metaTag.content = data;
+        } else {
+            let newMetaTag = document.createElement('meta');
+            newMetaTag.name = "keywords";
+            newMetaTag.content = data;
+            document.head.appendChild(newMetaTag);
+        }
+
+        // إضافة JSON-LD للبيانات المنظمة
+        let jsonLdScript = document.createElement('script');
+        jsonLdScript.type = 'application/ld+json';
+        jsonLdScript.innerHTML = JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": document.title || "موقعي",
+            "keywords": data
+        });
+        document.head.appendChild(jsonLdScript);
+    })
+    .catch(error => console.error('خطأ في تحميل الكلمات المفتاحية:', error));
+</script>
 </head>
 <body>
     <!-- الهيدر -->
@@ -47,7 +75,7 @@
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="ak copy.html">الرئيسية</a></li>
+                    <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="tents.html">المظلات</a></li>
                     <li><a href="royal-tents.html">الخيم الملكية</a></li>
                     <li><a href="shields.html">سواتر</a></li>
