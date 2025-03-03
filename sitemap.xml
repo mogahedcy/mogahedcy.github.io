@@ -56,35 +56,4 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- صفحة اتصل بنا -->
-  <url>
-    <loc>https://www.aldeyar.me/contact.html</loc>
-    <lastmod>2024-02-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- صفحة من نحن -->
-  <url>
-    <loc>https://www.aldeyar.me/about.html</loc>
-    <lastmod>2024-02-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- صفحة الخدمات -->
-  <url>
-    <loc>https://www.aldeyar.me/services.html</loc>
-    <lastmod>2024-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- صفحة الأسئلة الشائعة -->
-  <url>
-    <loc>https://www.aldeyar.me/faq.html</loc>
-    <lastmod>2024-02-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
 </urlset>
